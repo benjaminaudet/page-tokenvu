@@ -9,17 +9,29 @@
     <link rel="stylesheet" href="lib/css/materialize.min.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
+    <header>
         <div class="left">
-
+            <a class="waves-effect waves-light btn btn-outline">Previous</a>
         </div>
-        <div class="center"> 
-
+        <div class="center">
+            <div id="progress">
+                
+            </div>
+            <div class="step">
+                <div class="dot"></div>
+            </div>
+            <div class="step">
+                <div class="dot"></div>
+            </div>
+            <div class="step current"></div>
+            <div class="step"></div>
+            <div class="step"></div>
         </div>
-    </nav>
+    </header>
     <div id="informations" class="row center-align">
         <h1>Select plan</h1>
         <p>Investors are browsing through {{number_of_icos}}+ ICOs right now !</p>
@@ -32,16 +44,17 @@
                 <div class="card-content white-text">
                     <div class="center-align">
                         <span class="card-title">Free Listing</span>
-                        <p class="price">$ 0</p>
+                        <p class="price no-discount">$ 0</p>
                     </div>
-                    <ul>
-                        <li>Listed on TokenVu<i class="fas fa-check"></i></li>
-                        <li>Unlimited Updates<i class="fas fa-check"></i></li>
-                        <li>Apply to Get Verified<i class="fas fa-check"></i></li>
-                        <li>Get Rated by The Community<i class="fas fa-check"></i></li>
-                        <li>Get Rated by TokenVu</li>
-                        <li>Priority Support (< 24h)</li> <li>Mentioned in 1 weekly newsletter</li>
-                        <li>Get highlighted for 30 days</li>
+                    <ul class="advantages">
+                        <li><span>Listed on TokenVu</span><i class="fas fa-check right"></i></li>
+                        <li><span>Unlimited Updates</span><i class="fas fa-check right"></i></li>
+                        <li><span>Apply to Get Verified</span><i class="fas fa-check right"></i></li>
+                        <li><span>Get Rated by The Community</span><i class="fas fa-check right"></i></li>
+                        <li><span>Get Rated by TokenVu</span></li>
+                        <li><span>Priority Support (< 24h)</span></li>
+                        <li><span>Mentioned in 1 weekly newsletter</span></li>
+                        <li><span>Get highlighted for 30 days</span></li>
                     </ul>
                     <div class="row center-align">
                         <a class="waves-effect waves-light btn">Choose</a>
@@ -57,15 +70,15 @@
                         <p class="price-discount">$ 200</p>
                         <p class="price">$ 100</p>
                     </div>
-                    <ul>
-                        <li>Listed on TokenVu <i class="fas fa-check"></i></li>
-                        <li>Unlimited Updates <i class="fas fa-check"></i></li>
-                        <li>Apply to Get Verified <i class="fas fa-check"></i></li>
-                        <li>Get Rated by The Community <i class="fas fa-check"></i></li>
-                        <li>Get Rated by TokenVu</li> <i class="fas fa-check"></i>
-                        <li>Priority Support (< 24h)</li> <i class="fas fa-check"></i>
-                        <li>Mentioned in 1 weekly newsletter</li>
-                        <li>Get highlighted for 30 days</li>
+                    <ul class="advantages">
+                        <li><span>Listed on TokenVu</span><i class="fas fa-check right"></i></li>
+                        <li><span>Unlimited Updates</span><i class="fas fa-check right"></i></li>
+                        <li><span>Apply to Get Verified</span><i class="fas fa-check right"></i></li>
+                        <li><span>Get Rated by The Community</span><i class="fas fa-check right"></i></li>
+                        <li><span>Get Rated by TokenVu</span><i class="fas fa-check right"></i></li>
+                        <li><span>Priority Support (< 24h)</span><i class="fas fa-check right"></i></li>
+                        <li><span>Mentioned in 1 weekly newsletter</span></li>
+                        <li><span>Get highlighted for 30 days</span></li>
                     </ul>
                     <div class="row center-align">
                         <a class="waves-effect waves-light btn">Choose</a>
@@ -74,22 +87,22 @@
             </div>
         </div>
         <div class="col s12 m4">
-            <div class="card white darken-3 hoverable">
+            <div class="card white darken-3 hoverable golden">
                 <div class="card-content white-text">
                     <div class="center-align">
                         <span class="card-title">Boost Plan</span>
                         <p class="price-discount">$ 900</p>
                         <p class="price">$ 200</p>
                     </div>
-                    <ul>
-                        <li>Listed on TokenVu <i class="fas fa-check"></i></li>
-                        <li>Unlimited Updates <i class="fas fa-check"></i></li>
-                        <li>Apply to Get Verified <i class="fas fa-check"></i></li>
-                        <li>Get Rated by The Community <i class="fas fa-check"></i></li>
-                        <li>Get Rated by TokenVu</li> <i class="fas fa-check"></i>
-                        <li>Priority Support (< 24h)</li> <i class="fas fa-check"></i>
-                        <li>Mentioned in 1 weekly newsletter</li> <i class="fas fa-check"></i>
-                        <li>Get highlighted for 30 days</li> <i class="fas fa-check"></i>
+                    <ul class="advantages">
+                        <li>Listed on TokenVu <i class="fas fa-check right"></i></li>
+                        <li>Unlimited Updates <i class="fas fa-check right"></i></li>
+                        <li>Apply to Get Verified <i class="fas fa-check right"></i></li>
+                        <li>Get Rated by The Community <i class="fas fa-check right"></i></li>
+                        <li>Get Rated by TokenVu <i class="fas fa-check right"></i></li>
+                        <li>Priority Support (< 24h) <i class="fas fa-check right"></i></li>
+                        <li>Mentioned in 1 weekly newsletter <i class="fas fa-check right"></i></li>
+                        <li>Get highlighted for 30 days <i class="fas fa-check right"></i></li>
                     </ul>
                     <div class="row center-align">
                         <a class="waves-effect waves-light btn">Choose</a>
@@ -101,7 +114,7 @@
     <footer>
         <div class="row">
             <div class="col m4 s12">
-                <p>Made with <i class="fas fa-heart"></i> and coffee</p>
+                <p>Made with <i class="fas fa-heart green-token"></i> and coffee</p>
             </div>
             <div class="col m4 s12">
                 <p>Want to know more ? Ask us : <a href="http://" target="_blank"

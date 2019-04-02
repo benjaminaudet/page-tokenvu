@@ -1,5 +1,15 @@
 p, h1, h2, h3, h4, li, span {
     color: #4d4d4d;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 .card-title {
@@ -23,4 +33,39 @@ a {
 .price {
     font-size: 1.3em;
     font-weight: 500;
+}
+
+.card-content {
+    height: 500px;
+}
+
+.no-discount {
+    margin-top: 30px !important;
+}
+
+.green-token {
+    color: #2dd393;
+}
+
+.advantages .fa-check {
+    color: #2dd393;
+}
+
+#informations h1 {
+    font-weight: 500;
+    font-size: 2.2rem !important;
+}
+
+.btn {
+    background: #2dd393;
+}
+
+.golden {
+    border: 3px #fff500 solid;
+}
+
+.btn-outline {
+    background: white;
+    border: 2px #2dd393 solid;
+    color: #2dd393;
 }
