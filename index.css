@@ -73,9 +73,23 @@ a {
     margin-left: -18px;
     border: 2px solid #2dd393;
     border-radius: 50%;
-    z-index: 10000;
+    z-index: 2;
     position: absolute;
     height: 40px;
+}
+
+.step.current .dot {
+    z-index: 3;
+}
+
+.step .label {
+    position: absolute;
+    color: #2dd393;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 32px;
+    margin-left: -28px;
+    font-weight: 500;
 }
 
 header {
@@ -90,7 +104,16 @@ header {
     border-radius: 50%;
 }
 
+.center {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
 /* INFOS */
+
+#informations {
+    margin-top: 100px;
+}
 
 #informations h1 {
     font-weight: 500;
@@ -101,7 +124,6 @@ header {
 
 .golden {
     border: 3px #fff500 solid;
-    height: 600px;
 }
 
 li {
@@ -127,9 +149,15 @@ li {
     height: 500px;
 }
 
-.card-content:not(.golden) {
-    margin-top: 50px;
+@media (min-width: 992px) {
+    .card-content:not(.golden) {
+        margin-top: 50px;
+    }
+    .golden {
+        height: 600px;
+    }
 }
+
 
 .no-discount {
     margin-top: 30px !important;
