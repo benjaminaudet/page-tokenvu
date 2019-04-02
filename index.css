@@ -1,32 +1,13 @@
-p, h1, h2, h3, h4, li, span {
-    color: #4d4d4d;
-    font-family: 'Roboto';
-    font-weight: 400;
-}
-
-.dot {
-    background: #2dd393;
-    width: 5px;
-    position: absolute;
-    margin: 0 30px 0 30px;
-    height: 5px;
-    border-radius: 50%;
-}
-
-header {
-    margin-top: 50px;
-}
+/* MAIN */
 
 body {
     margin: 0 10% 0 10%;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-.card-title {
-    font-weight: 500 !important;
+p, h1, h2, h3, h4, li, span {
+    color: #4d4d4d;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 .token-green {
@@ -35,6 +16,100 @@ li {
 
 a {
     color: #2dd393;
+    text-decoration: underline;
+}
+
+.btn {
+    background: #2dd393;
+}
+
+.btn:hover {
+    background: #2dd393;
+}
+
+.btn-outline {
+    background: #fff;
+    border: 2px #2dd393 solid;
+    color: #2dd393;
+}
+
+.btn-outline:hover {
+    background: #2dd393;
+    border: 2px #2dd393 solid;
+    color: #fff;
+}
+
+.green-token {
+    color: #2dd393;
+}
+
+/* HEADER */
+
+.step {
+    display: inline-block;
+    margin: 0 50px 0 50px;
+}
+
+.step:after {
+    content: " ";
+    width: 89px;
+    margin-top: 2px;
+    margin-left: 9px;
+    position: absolute;
+    background: #2dd393;
+    height: 1px;
+}
+
+.step:last-child:after {
+    content: none
+    
+}
+
+.step.current:before {
+    content: " ";
+    width: 40px;
+    margin-top: -17px;
+    background: white;
+    margin-left: -18px;
+    border: 2px solid #2dd393;
+    border-radius: 50%;
+    z-index: 10000;
+    position: absolute;
+    height: 40px;
+}
+
+header {
+    margin-top: 50px;
+}
+
+.dot {
+    background: #2dd393;
+    width: 5px;
+    position: absolute;
+    height: 5px;
+    border-radius: 50%;
+}
+
+/* INFOS */
+
+#informations h1 {
+    font-weight: 500;
+    font-size: 2.2rem !important;
+}
+
+/* OFFERS */
+
+.golden {
+    border: 3px #fff500 solid;
+    height: 600px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-weight: 500 !important;
 }
 
 .price-discount {
@@ -60,38 +135,12 @@ a {
     margin-top: 30px !important;
 }
 
-.green-token {
-    color: #2dd393;
-}
-
 .advantages .fa-check {
     color: #2dd393;
 }
 
-#informations h1 {
-    font-weight: 500;
-    font-size: 2.2rem !important;
-}
+/* FOOTER */
 
-.btn {
-    background: #2dd393;
-}
-
-.btn:hover {
-    background: #2dd393;
-}
-
-.golden {
-    border: 3px #fff500 solid;
-    height: 600px;
-}
-
-.btn-outline {
-    background: white;
-    border: 2px #2dd393 solid;
-    color: #2dd393;
-}
-
-.step {
-    display: inline-block;
+#social {
+    margin-top: 15px;
 }
